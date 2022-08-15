@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>testing hover</title>
+
+    <style>
+      :root {
+        background-color: #070d1bff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .logo {
+        width: 75vw;
+        max-height: 75vw;
+        position: relative;
+        display: inline-block;
+      }
+
+      .img-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.25s ease-in;
+      }
+      .img-top:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="hellbound_log1test.svg" style="width: 100%" class="img-bot" />
+      <img
+        src="hellbound_log1testhov.svg"
+        style="width: 100%"
+        class="img-top"
+      />
+    </div>
+  </body>
+</html>
